@@ -661,13 +661,13 @@ int main()
                     window.display();
                     condition = 0;
                     gamePlay = false;
-                    sf::sleep(sf::milliseconds(1570));//wait for a second
+                    sf::sleep(sf::milliseconds(2200));//wait for a second
                     if (event.type == sf::Event::Closed)
                         window.close();
                 }
                 while(gamePlay == false)
                 {
-                    window.clear();
+                    // window.clear();
                     vicBoardText.setString("Play again?");
                     window.draw(vicBoard);
                     window.draw(vicBoardText);
